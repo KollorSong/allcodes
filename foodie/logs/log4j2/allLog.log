@@ -1,0 +1,16 @@
+03:41:45.076 [main] INFO  cn.kollorsong.Application - Starting Application on localhost with PID 2769 (/Users/kollorsong/IdeaProjects/foodie/foodie-api/target/classes started by kollorsong in /Users/kollorsong/IdeaProjects/foodie)
+03:41:45.084 [main] INFO  cn.kollorsong.Application - The following profiles are active: dev
+03:41:45.954 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+03:41:45.963 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+03:41:45.969 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+03:41:45.970 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+03:41:46.029 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/foodie] - Initializing Spring embedded WebApplicationContext
+03:41:46.030 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 906 ms
+03:41:46.749 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+03:41:46.827 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+03:41:46.827 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+03:41:46.828 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+03:41:46.828 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+03:41:46.937 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+03:41:46.959 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/foodie'
+03:41:46.962 [main] INFO  cn.kollorsong.Application - Started Application in 2.295 seconds (JVM running for 2.951)
