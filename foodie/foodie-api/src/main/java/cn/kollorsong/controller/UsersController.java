@@ -22,6 +22,8 @@ public class UsersController {
     public String getUsers( String id){
         System.out.printf("/users/getUsers id = %s",id);
         Users users = usersService.getUsersById(id);
+
+
         return JsonUtils.objectToJson(users);
     }
 
