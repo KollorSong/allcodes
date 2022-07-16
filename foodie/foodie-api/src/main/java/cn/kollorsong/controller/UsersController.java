@@ -20,7 +20,7 @@ public class UsersController {
 
     @GetMapping("/getUsers")
     public String getUsers( String id){
-        System.out.println(id);
+        System.out.printf("/users/getUsers id = %s",id);
         Users users = usersService.getUsersById(id);
         return JsonUtils.objectToJson(users);
     }
