@@ -18,8 +18,8 @@ public class UsersController {
     @Autowired
     private UsersService usersService;
 
-    @GetMapping("/getUsers/{id}")
-    public String getUsers(@PathVariable("id") String id){
+    @GetMapping("/getUsers")
+    public String getUsers( String id){
         System.out.println(id);
         Users users = usersService.getUsersById(id);
         return JsonUtils.objectToJson(users);
