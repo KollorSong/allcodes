@@ -7,4 +7,9 @@ public interface CarouselService {
     Carousel getCarouselById(String id);
 
 
+    void oneStep();
+
+    void twoStep();
+
+
 }
