@@ -8,6 +8,8 @@ public interface UsersService {
 
 
     //TODO 判断用户名是否存在
+    boolean userIsExist(String name);
+
     //
 
 

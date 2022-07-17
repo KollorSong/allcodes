@@ -27,5 +27,16 @@ public class UsersServiceImpl implements UsersService {
         return user;
     }
 
+    @Override
+    public boolean userIsExist(String name) {
+        Example example = new Example(Users.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("username",name);
+        Users users = usersMapper.selectOneByExample(example);
+        if (users != null)
+            return true;
+        return false;
+    }
+
 
 }

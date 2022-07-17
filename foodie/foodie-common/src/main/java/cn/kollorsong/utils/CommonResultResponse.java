@@ -2,6 +2,8 @@ package cn.kollorsong.utils;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,13 +24,12 @@ import java.util.List;
  *
  * @DateTime: 2022/7/17 - 9:42 AM
  */
+@Data //省略get  set 方法
+@Accessors(chain = true) //打开链式操作
 public class CommonResultResponse<T>{
-
-
 
     // 定义jackson对象
     private static final ObjectMapper MAPPER = new ObjectMapper();
-
 
     // 响应业务状态
     private Integer status;
@@ -80,7 +81,6 @@ public class CommonResultResponse<T>{
     }
 
     public CommonResultResponse() {
-
     }
 
     public CommonResultResponse(Integer status, String msg, T data) {
@@ -102,48 +102,9 @@ public class CommonResultResponse<T>{
         this.data = data;
     }
 
+    //判断请求成功
     public Boolean isOK() {
         return this.status == 200;
     }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
-    public Object getExt() {
-        return ext;
-    }
-
-    public void setExt(Object ext) {
-        this.ext = ext;
-    }
-
-    public String getOk() {
-		return ok;
-	}
-
-	public void setOk(String ok) {
-		this.ok = ok;
-	}
 
 }
