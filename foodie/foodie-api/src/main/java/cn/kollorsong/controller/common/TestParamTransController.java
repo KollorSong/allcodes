@@ -1,8 +1,11 @@
 package cn.kollorsong.controller.common;
 
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -13,7 +16,10 @@ import javax.servlet.http.HttpServletRequest;
  * @DateTime: 2022/7/16 - 2:09 PM
  */
 @RequestMapping("/testParamTrans")
-@Controller
+@RestController
+//swagger文档无法扫描接口
+//@ApiIgnore
+@Api(value = "测试参数传递",tags = "测试参数传递tags")
 public class TestParamTransController {
 
 
@@ -24,6 +30,8 @@ public class TestParamTransController {
      * @param: null
      * @Return:
      */
+    @ApiOperation(value = "request方式",notes = "request方式notes")
+    @RequestMapping(value = "/testParam1",method = RequestMethod.GET)
     public Object testParam1(HttpServletRequest request) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
