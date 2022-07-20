@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.kollorsong.mapper.ItemsSpecMapper" >
+  <resultMap id="BaseResultMap" type="cn.kollorsong.pojo.ItemsSpec" >
+    <constructor >
+      <idArg column="id" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="item_id" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="name" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="stock" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="discounts" jdbcType="DECIMAL" javaType="java.math.BigDecimal" />
+      <arg column="price_discount" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="price_normal" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="created_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="updated_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, item_id, name, stock, discounts, price_discount, price_normal, created_time,
+    updated_time
+  </sql>
+</mapper>
