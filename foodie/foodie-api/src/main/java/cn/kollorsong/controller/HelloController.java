@@ -1,5 +1,6 @@
 package cn.kollorsong.controller;
 
+import cn.kollorsong.config.MyDiyException;
 import cn.kollorsong.pojo.Users;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
@@ -27,7 +28,7 @@ public class HelloController {
 
 
     @PostMapping("/helloTest")
-    public String helloTest(@RequestBody Users users, ServletRequest request, ServletResponse response){
+    public String helloTest(@RequestBody Users users, ServletRequest request, ServletResponse response) throws Exception {
 
         System.out.println("sout"+JSON.toJSON(users));
 
@@ -38,7 +39,7 @@ public class HelloController {
         log.error("这里是error信息");
 
         if (1==1)
-            throw new RuntimeException("测试异常");
+            throw new MyDiyException("测试异常");
 
         return "hello world";
 
