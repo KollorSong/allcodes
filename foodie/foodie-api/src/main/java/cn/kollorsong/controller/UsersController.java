@@ -19,9 +19,11 @@ public class UsersController {
     private UsersService usersService;
 
     @GetMapping("/getUsers")
-    public String getUsers( String id){
+    public String getUsers( String id) throws Exception{
         System.out.printf("/users/getUsers id = %s",id);
         Users users = usersService.getUsersById(id);
+        if (1==1)
+            throw new RuntimeException("ceshiyichang");
         return JsonUtils.objectToJson(users);
     }
 

@@ -1,4 +1,4 @@
-package cn.kollorsong.controller.common;
+package cn.kollorsong.controller;
 
 
 import io.swagger.annotations.Api;
