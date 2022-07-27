@@ -1,3 +1,19 @@
+# idea
 .idea
+*.iws
+*.iml
+*.ipr
 
+# 隐藏文件
+.DS_store
+*/.DS_store
+
+#日志
 logs/
+*/logs
+
+#编译
+target/
+*/target/
+out/
+*/out/
