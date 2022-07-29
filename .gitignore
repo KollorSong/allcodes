@@ -1,9 +1,36 @@
+### Mac文件 ###
+.DS_Store
+
+### IDEA ###
+*/.idea/*
 .idea
-
-logs/
-
-target/
-
+*/*.iml
 *.iml
 
-.DS_Store
+### eclipse ###
+.classpath
+.project
+.settings
+
+### voscode ###
+.vscode/
+*/vscode/*
+
+### Maven gradle 编译 ###
+*/target/*
+target/
+*/out/*
+out/
+*/.gradle/*
+.gradle/
+
+### log 日志 ###
+*/logs/*
+*.log
+
+### vue ###
+*/node_modules/*
+node_moudules/
+
+*/dist/*
+dist/
