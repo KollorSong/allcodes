@@ -42,7 +42,7 @@ dist/
 package-lock.json
 yarn.lock
 
-
+application.pid
 
 tests/**/coverage/
 tests/e2e/reports
