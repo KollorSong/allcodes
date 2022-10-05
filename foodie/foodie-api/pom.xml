@@ -65,6 +65,12 @@
             <version>2.2.1</version>
         </dependency>
 
+        <!-- 整合第三方登录 -->
+        <dependency>
+            <groupId>me.zhyd.oauth</groupId>
+            <artifactId>JustAuth</artifactId>
+            <version>1.16.5</version>
+        </dependency>
 
 
 
