@@ -11,9 +11,15 @@
 #日志
 logs/
 */logs
+*.log
+*.log.gz
+
 
 #编译
+.mvn
 target/
 */target/
 out/
 */out/
+
+
